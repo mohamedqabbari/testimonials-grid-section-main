@@ -117,10 +117,10 @@ body .container #patrick .reviewer-image, html .container #patrick .reviewer-ima
 }
 
 @media screen and (min-width: 1000px) {
-  body {
+  body, html {
     height: 100% !important;
   }
-  body .container {
+  body .container, html .container {
     width: 80% !important;
     grid-template-columns: repeat(4, 1fr) !important;
     grid-template-areas: "danial danial jonathan kira" "jeanette patrick patrick kira" !important;
