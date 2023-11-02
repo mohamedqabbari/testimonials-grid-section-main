@@ -1,0 +1,23 @@
+{
+  "name": "testimonials-grid-section-main",
+  "version": "1.0.0",
+  "description": "Frontend Mentor Challenge: Testimonials Grid Section Main",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass styles/style.scss styles/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohamedqabbari/testimonials-grid-section-main.git"
+  },
+  "author": "Mohammed Qabbari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohamedqabbari/testimonials-grid-section-main/issues"
+  },
+  "homepage": "https://github.com/mohamedqabbari/testimonials-grid-section-main#readme",
+  "devDependencies": {
+    "sass": "^1.69.4"
+  }
+}

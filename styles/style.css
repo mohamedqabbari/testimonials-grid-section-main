@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+body, html {
+  padding: 0;
+  margin: 20px 0 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: hsl(210, 46%, 95%);
+}
+body .container, html .container {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  grid-template-areas: "danial" "jonathan" "jeanette" "patrick" "kira";
+}
+body .container .review, html .container .review {
+  background-color: white;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 10px 10px 20px hsl(0, 0%, 81%);
+}
+body .container .review .reviewer, html .container .review .reviewer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+body .container .review .reviewer .reviewer-image, html .container .review .reviewer .reviewer-image {
+  display: inline-block;
+  border-radius: 50%;
+  border: 2px solid #FFF;
+  width: 40px;
+}
+body .container .review .reviewer .reviewer-info, html .container .review .reviewer .reviewer-info {
+  display: inline-block;
+  margin-left: 10px;
+}
+body .container .review .reviewer .reviewer-info p, html .container .review .reviewer .reviewer-info p {
+  margin: 2px;
+}
+body .container .review .reviewer .reviewer-info .reviewer-name, html .container .review .reviewer .reviewer-info .reviewer-name {
+  color: hsl(100, 100%, 100%);
+}
+body .container .review .reviewer .reviewer-info .reviewer-type, html .container .review .reviewer .reviewer-info .reviewer-type {
+  color: hsla(100, 100%, 100%, 0.5);
+  font-size: 0.9rem;
+}
+body .container .review .review-title, html .container .review .review-title {
+  color: hsl(100, 100%, 100%);
+}
+body .container .review .review-text, html .container .review .review-text {
+  color: hsla(100, 100%, 100%, 0.3);
+  font-size: 0.9rem;
+}
+body .container #danial, html .container #danial {
+  grid-area: danial;
+  background-color: hsl(263, 55%, 52%);
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 85% top;
+}
+body .container #danial .reviewer-image, html .container #danial .reviewer-image {
+  border-color: hsl(0, 0%, 81%);
+}
+body .container #jeanette, html .container #jeanette {
+  grid-area: jeanette;
+}
+body .container #jeanette .reviewer-image, html .container #jeanette .reviewer-image {
+  border-color: hsl(210, 46%, 95%);
+}
+body .container #jeanette .reviewer-info .reviewer-name, html .container #jeanette .reviewer-info .reviewer-name {
+  color: hsl(0, 0%, 0%);
+}
+body .container #jeanette .reviewer-info .reviewer-type, html .container #jeanette .reviewer-info .reviewer-type {
+  color: hsla(0, 0%, 0%, 0.5);
+}
+body .container #jeanette .review-title, html .container #jeanette .review-title {
+  color: hsl(0, 0%, 0%);
+}
+body .container #jeanette .review-text, html .container #jeanette .review-text {
+  color: hsla(0, 0%, 0%, 0.3);
+}
+body .container #jonathan, html .container #jonathan {
+  background-color: hsl(217, 19%, 35%);
+  grid-area: jonathan;
+}
+body .container #jonathan .reviewer-image, html .container #jonathan .reviewer-image {
+  border-color: hsl(0, 0%, 81%);
+}
+body .container #kira, html .container #kira {
+  grid-area: kira;
+}
+body .container #kira .reviewer-image, html .container #kira .reviewer-image {
+  border-color: hsl(210, 46%, 95%);
+}
+body .container #kira .reviewer-info .reviewer-name, html .container #kira .reviewer-info .reviewer-name {
+  color: hsl(0, 0%, 0%);
+}
+body .container #kira .reviewer-info .reviewer-type, html .container #kira .reviewer-info .reviewer-type {
+  color: hsla(0, 0%, 0%, 0.5);
+}
+body .container #kira .review-title, html .container #kira .review-title {
+  color: hsl(0, 0%, 0%);
+}
+body .container #kira .review-text, html .container #kira .review-text {
+  color: hsla(0, 0%, 0%, 0.3);
+}
+body .container #patrick, html .container #patrick {
+  grid-area: patrick;
+  background-color: hsl(219, 29%, 14%);
+}
+body .container #patrick .reviewer-image, html .container #patrick .reviewer-image {
+  border-color: hsl(263, 55%, 52%);
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    height: 100% !important;
+  }
+  body .container {
+    width: 80% !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    grid-template-areas: "danial danial jonathan kira" "jeanette patrick patrick kira" !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
