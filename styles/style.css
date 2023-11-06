@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
 body, html {
-  padding: 0;
-  margin: 20px 0 20px;
+  padding: 20px 0 20px;
+  margin: 0;
   width: 100%;
   height: auto;
   display: flex;
@@ -14,14 +14,14 @@ body .container, html .container {
   width: 90%;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 15px;
+  gap: 20px 30px;
   grid-template-areas: "danial" "jonathan" "jeanette" "patrick" "kira";
 }
 body .container .review, html .container .review {
   background-color: white;
   border-radius: 10px;
   padding: 25px;
-  box-shadow: 10px 10px 20px hsl(0, 0%, 81%);
+  box-shadow: 15px 15px 30px hsl(0, 0%, 81%);
 }
 body .container .review .reviewer, html .container .review .reviewer {
   display: flex;
@@ -52,7 +52,7 @@ body .container .review .review-title, html .container .review .review-title {
   color: hsl(100, 100%, 100%);
 }
 body .container .review .review-text, html .container .review .review-text {
-  color: hsla(100, 100%, 100%, 0.3);
+  color: hsla(100, 100%, 100%, 0.7);
   font-size: 0.9rem;
 }
 body .container #danial, html .container #danial {
@@ -72,16 +72,16 @@ body .container #jeanette .reviewer-image, html .container #jeanette .reviewer-i
   border-color: hsl(210, 46%, 95%);
 }
 body .container #jeanette .reviewer-info .reviewer-name, html .container #jeanette .reviewer-info .reviewer-name {
-  color: hsl(0, 0%, 0%);
+  color: hsl(219, 29%, 14%);
 }
 body .container #jeanette .reviewer-info .reviewer-type, html .container #jeanette .reviewer-info .reviewer-type {
   color: hsla(0, 0%, 0%, 0.5);
 }
 body .container #jeanette .review-title, html .container #jeanette .review-title {
-  color: hsl(0, 0%, 0%);
+  color: hsl(219, 29%, 14%);
 }
 body .container #jeanette .review-text, html .container #jeanette .review-text {
-  color: hsla(0, 0%, 0%, 0.3);
+  color: hsla(0, 0%, 0%, 0.7);
 }
 body .container #jonathan, html .container #jonathan {
   background-color: hsl(217, 19%, 35%);
@@ -97,16 +97,16 @@ body .container #kira .reviewer-image, html .container #kira .reviewer-image {
   border-color: hsl(210, 46%, 95%);
 }
 body .container #kira .reviewer-info .reviewer-name, html .container #kira .reviewer-info .reviewer-name {
-  color: hsl(0, 0%, 0%);
+  color: hsl(219, 29%, 14%);
 }
 body .container #kira .reviewer-info .reviewer-type, html .container #kira .reviewer-info .reviewer-type {
   color: hsla(0, 0%, 0%, 0.5);
 }
 body .container #kira .review-title, html .container #kira .review-title {
-  color: hsl(0, 0%, 0%);
+  color: hsl(219, 29%, 14%);
 }
 body .container #kira .review-text, html .container #kira .review-text {
-  color: hsla(0, 0%, 0%, 0.3);
+  color: hsla(0, 0%, 0%, 0.7);
 }
 body .container #patrick, html .container #patrick {
   grid-area: patrick;
@@ -118,6 +118,7 @@ body .container #patrick .reviewer-image, html .container #patrick .reviewer-ima
 
 @media screen and (min-width: 1000px) {
   body, html {
+    padding: 0 !important;
     height: 100% !important;
   }
   body .container, html .container {
